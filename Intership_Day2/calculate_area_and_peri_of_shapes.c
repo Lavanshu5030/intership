@@ -1,5 +1,6 @@
+//Compiled:using "make" command, and then run using ./filename
 #include <stdio.h>
-#include <math.h> // use flag "-lm" to link header file
+#include <math.h> // used flag "-lm" in makefile to link header file
 
 int main() {
     int shape;
