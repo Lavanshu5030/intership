@@ -45,7 +45,7 @@ void searchBookByTitle() {
 
     printf("Matching books:\n");
     for (int i = 0; i < bookCount; i++) {
-        if (strcmp(catalog[i].title, searchTitle) == 0) {
+        if (strcasecmp(catalog[i].title, searchTitle) == 0) {
             printf("Title: %s\n", catalog[i].title);
             printf("Author: %s\n", catalog[i].author);
             printf("ISBN: %s\n", catalog[i].isbn);
@@ -62,7 +62,7 @@ void searchBookByAuthor() {
 
     printf("Matching books:\n");
     for (int i = 0; i < bookCount; i++) {
-        if (strcmp(catalog[i].author, searchAuthor) == 0) {
+        if (strcasecmp(catalog[i].author, searchAuthor) == 0) {
             printf("Title: %s\n", catalog[i].title);
             printf("Author: %s\n", catalog[i].author);
             printf("ISBN: %s\n", catalog[i].isbn);
@@ -96,7 +96,7 @@ void removeBook() {
     int bookIndex = -1;
 
     for (int i = 0; i < bookCount; i++) {
-        if (strcmp(catalog[i].title, searchTitle) == 0) {
+        if (strcasecmp(catalog[i].title, searchTitle) == 0) {
             bookIndex = i;
             break;
         }
